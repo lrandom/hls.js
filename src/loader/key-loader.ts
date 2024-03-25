@@ -237,6 +237,7 @@ export default class KeyLoader implements ComponentAPI {
     const keyLoader = new Loader(config) as Loader<KeyLoaderContext>;
     frag.keyLoader = keyInfo.loader = keyLoader;
 
+    alert('TEST');
     return (keyInfo.keyLoadPromise = new Promise((resolve, reject) => {
       const loaderContext: KeyLoaderContext = {
         keyInfo,
