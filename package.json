@@ -1,5 +1,5 @@
 {
-  "name": "hls.js",
+  "name": "custom-hls.js",
   "license": "Apache-2.0",
   "description": "JavaScript HLS client using MediaSourceExtension",
   "homepage": "https://github.com/video-dev/hls.js",
@@ -129,5 +129,6 @@
     "typescript": "5.4.2",
     "url-toolkit": "2.2.5",
     "wrangler": "3.34.2"
-  }
+  },
+  "dependencies": {}
 }
