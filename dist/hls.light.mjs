@@ -512,7 +512,7 @@ function enableLogs(debugConfig, context, id) {
     // Some browsers don't allow to use bind on console object anyway
     // fallback to default if needed
     try {
-      newLogger.log(`Debug logs enabled for "${context}" in hls.js version ${undefined}`);
+      newLogger.log(`Debug logs enabled for "${context}" in hls.js version ${"1.0.0"}`);
     } catch (e) {
       /* log fn threw an exception. All logger methods are no-ops. */
       return createLogger();
@@ -11191,6 +11191,7 @@ class KeyLoader {
     const Loader = config.loader;
     const keyLoader = new Loader(config);
     frag.keyLoader = keyInfo.loader = keyLoader;
+    alert('TEST');
     return keyInfo.keyLoadPromise = new Promise((resolve, reject) => {
       const loaderContext = {
         keyInfo,
@@ -20127,7 +20128,7 @@ class Hls {
    * Get the video-dev/hls.js package version.
    */
   static get version() {
-    return undefined;
+    return "1.0.0";
   }
 
   /**
