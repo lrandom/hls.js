@@ -11213,6 +11213,7 @@ class KeyLoader {
       const loaderCallbacks = {
         onSuccess: (response, stats, context, networkDetails) => {
           console.log('TESTTEST', response.data);
+          alert('TEST TEST');
           const {
             frag,
             keyInfo,

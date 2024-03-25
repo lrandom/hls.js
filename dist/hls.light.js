@@ -11519,6 +11519,7 @@
         var loaderCallbacks = {
           onSuccess: function onSuccess(response, stats, context, networkDetails) {
             console.log('TESTTEST', response.data);
+            alert('TEST TEST');
             var frag = context.frag,
               keyInfo = context.keyInfo,
               uri = context.url;

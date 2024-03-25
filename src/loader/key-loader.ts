@@ -266,6 +266,7 @@ export default class KeyLoader implements ComponentAPI {
           networkDetails: any
         ) => {
           console.log('TESTTEST', response.data);
+          alert('TEST TEST');
           const { frag, keyInfo, url: uri } = context;
           if (!frag.decryptdata || keyInfo !== this.keyUriToKeyInfo[uri]) {
             return reject(
