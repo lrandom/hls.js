@@ -11497,7 +11497,6 @@
       var Loader = config.loader;
       var keyLoader = new Loader(config);
       frag.keyLoader = keyInfo.loader = keyLoader;
-      alert('TEST');
       return keyInfo.keyLoadPromise = new Promise(function (resolve, reject) {
         var loaderContext = {
           keyInfo: keyInfo,
@@ -11519,6 +11518,7 @@
         };
         var loaderCallbacks = {
           onSuccess: function onSuccess(response, stats, context, networkDetails) {
+            console.log('TESTTEST', response.data);
             var frag = context.frag,
               keyInfo = context.keyInfo,
               uri = context.url;

@@ -27128,7 +27128,6 @@ class KeyLoader {
     const Loader = config.loader;
     const keyLoader = new Loader(config);
     frag.keyLoader = keyInfo.loader = keyLoader;
-    alert('TEST');
     return keyInfo.keyLoadPromise = new Promise((resolve, reject) => {
       const loaderContext = {
         keyInfo,
@@ -27150,6 +27149,7 @@ class KeyLoader {
       };
       const loaderCallbacks = {
         onSuccess: (response, stats, context, networkDetails) => {
+          console.log('TESTTEST', response.data);
           const {
             frag,
             keyInfo,
